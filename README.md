@@ -30,12 +30,6 @@ mvnw org.apache.tomcat.maven:tomcat7-maven-plugin:run
 ```
 mvn org.apache.tomcat.maven:tomcat7-maven-plugin:run -Dmaven.tomcat.port=9090 -Dmaven.tomcat.path=/servletcalculaimc
 ```
-
-**Para Acessar Calculadora IMC na porta 8080**
-
-http://localhost:8080/servletcalculaimc em qualquer navegador(atenção a porta de conexão).
-
-
 **Para Acessar Calculadora IMC na porta 9090**
 
 http://localhost:9090/servletcalculaimc em qualquer navegador(atenção a porta de conexão).
