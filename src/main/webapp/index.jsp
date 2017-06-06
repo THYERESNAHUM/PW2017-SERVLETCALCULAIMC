@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <html>
 <head>
 <title>Calcula IMC - JSP</title>
@@ -21,7 +23,7 @@ form[role=moldura] {
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<br>
-				<form role="moldura" class="form-horizontal" action="servletcalculaimc" method="post">
+				<form role="moldura" class="form-horizontal" action="calculaimc" method="post">
 				<fieldset>
 					<div align="center">
 							<h3>Calcula IMC - Servlet</h3>
@@ -63,12 +65,20 @@ form[role=moldura] {
 						<div class="col-md-3">
 							<button id="bt" name="bt" class="btn btn-info">Calcular</button>
 						</div>
-					</div>					
-					</fieldset>					
-					<div class="alert alert-success" role="alert" style="margin-top:45px">${resultado}</div>
+					</div>
+					</br>					
+						<div class="form-group">
+							<div class="col-md-4"></div>
+							<c:if test="${not empty resultado}">
+								<div class="alert alert-success fade in">						
+										<strong>${resultado}</strong>
+								</div>
+							</c:if>
+						</div>
+				</fieldset>					
 				</form>
 			</div>
-		</div>
-	</div>
+		</div>			
+	</div>		
 </body>
 </html>
