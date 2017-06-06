@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(value = "/calcularimc")
+@WebServlet(urlPatterns = "/servletcalculaimc")
 
 public class CalculadoraControler extends HttpServlet {
 			
@@ -25,7 +25,7 @@ public class CalculadoraControler extends HttpServlet {
 			String resultado = calculadora.calculaIMC(peso, altura, sexo);	
 			
 			request.setAttribute("resultado", resultado);
-			request.getRequestDispatcher("calculadoraview.jsp").forward(request, response);			
+			request.getRequestDispatcher("index.jsp").forward(request, response);			
 		}		
 		
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

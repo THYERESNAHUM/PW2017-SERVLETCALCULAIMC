@@ -21,7 +21,7 @@ form[role=moldura] {
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<br>
-				<form role="moldura" class="form-horizontal" aaction="calcularimc">
+				<form role="moldura" class="form-horizontal" action="servletcalculaimc" method="post">
 				<fieldset>
 					<div align="center">
 							<h3>Calcula IMC - Servlet</h3>
