@@ -21,7 +21,7 @@ form[role=moldura] {
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<br>
-				<form role="moldura" class="form-horizontal">
+				<form role="moldura" class="form-horizontal" aaction="calcularimc">
 				<fieldset>
 					<div align="center">
 							<h3>Calcula IMC - Servlet</h3>
@@ -63,12 +63,9 @@ form[role=moldura] {
 						<div class="col-md-3">
 							<button id="bt" name="bt" class="btn btn-info">Calcular</button>
 						</div>
-					</div>
-
-					
-					</fieldset>
-					
-					<p>${resultado}</p>
+					</div>					
+					</fieldset>					
+					<div class="alert alert-success" role="alert" style="margin-top:45px">${resultado}</div>
 				</form>
 			</div>
 		</div>

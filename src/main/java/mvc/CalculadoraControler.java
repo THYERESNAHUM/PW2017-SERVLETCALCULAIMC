@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = "/servletcalculaimc")
+@WebServlet(value = "/calcularimc")
 
 public class CalculadoraControler extends HttpServlet {
 			
